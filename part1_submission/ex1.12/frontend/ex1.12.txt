@@ -1,0 +1,2 @@
+$ docker build -t ex1.12:frontend .
+$ docker run --name ex1.12-frontend -p 5000:5000 ex1.12:frontend

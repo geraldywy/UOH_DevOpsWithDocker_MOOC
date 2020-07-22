@@ -1,0 +1,2 @@
+$ docker build -t ex1.12:backend .
+$ docker run -d -v ${PWD}/logs.txt:/mydir/app/logs.txt --name ex1.12-backend -p 8000:8000 ex1.12:backend

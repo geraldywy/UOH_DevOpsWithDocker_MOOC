@@ -1,0 +1,26 @@
+PS C:\Users\Gerald> docker run -it --name curler ubuntu:16.04 sh -c 'echo Input website:; read website; echo "Searching.."; curl http://$website;'
+Input website:
+helsinki.fi
+Searching..
+sh: 1: curl: not found
+PS C:\Users\Gerald> docker run -it --name curler ubuntu:16.04 sh -c 'apt-get update; apt install curl; echo Input website:; read website; echo "Searching.."; curl http://$website;'
+C:\Program Files\Docker\Docker\resources\bin\docker.exe: Error response from daemon: Conflict. The container name "/curler" is already in use by container "d07dff56e13e2ac3863fad021016f2473df63cd54d1b96f799716ff042a26345". You have to remove (or rename) that container to be able to reuse that name.
+See 'C:\Program Files\Docker\Docker\resources\bin\docker.exe run --help'.
+PS C:\Users\Gerald> docker rm -f curler
+curler
+PS C:\Users\Gerald> docker run -it --name curler ubuntu:16.04 sh -c 'apt-get update; apt install curl; echo Input website:; read website; echo "Searching.."; curl http://$website;'
+
+127 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+
