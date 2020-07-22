@@ -1,4 +1,4 @@
-# UOH_DevOpsWithDocker_MOOC
+# UOH Dev Ops With Docker MOOC
 
 Submission for University of Helsinki's Dev Ops with Docker MOOC. Course Link: https://devopswithdocker.com/
 
