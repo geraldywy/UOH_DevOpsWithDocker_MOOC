@@ -1,0 +1,2 @@
+docker build -t myenv .
+docker run -it --name myUbuntuEnv myenv
