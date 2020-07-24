@@ -1,0 +1,1 @@
+docker run -d --name ex1.14 -p 3000:3000  ex1.14
