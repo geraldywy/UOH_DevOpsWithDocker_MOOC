@@ -1,0 +1,20 @@
+version: '3.5'
+
+services:
+  proxy:
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    container_name: proxy
+
+  frontend:
+    image: ex1.10
+    container_name: frontend
+    environment:
+      - API_URL=/api/
+
+  backend:
+    image: ex1.11
+    container_name: backend

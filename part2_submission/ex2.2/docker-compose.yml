@@ -1,0 +1,8 @@
+version: '3.5'
+
+services:
+  ports-ex:
+    image: devopsdockeruh/ports_exercise
+    container_name: ex2.2
+    ports:
+      - 80:80

@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  frontend:
+    image: ex1.10
+    ports:
+      - 5000:5000
+    container_name: ex2.3-frontend
+  
+  backend:
+    image: ex1.11
+    ports:
+      - 8000:8000
+    container_name: ex2.3-backend
