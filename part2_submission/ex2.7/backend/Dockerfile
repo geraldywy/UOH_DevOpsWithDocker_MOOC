@@ -1,4 +1,4 @@
-FROM python:3.6.7-slim
+FROM python:3.10.10-slim
 
 WORKDIR /src
 
