@@ -8,3 +8,4 @@ Pillow==5.3.0
 imageio==2.4.1
 requests==2.20.0
 matplotlib==2.2.3
+urllib3>=1.26.18 # not directly required, pinned by Snyk to avoid a vulnerability
