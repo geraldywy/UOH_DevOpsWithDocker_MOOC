@@ -37,11 +37,11 @@
     "redux-thunk": "^2.3.0",
     "semantic-ui-css": "^2.3.1",
     "semantic-ui-react": "^0.83.0",
-    "serve": "^11.3.0",
+    "serve": "^13.0.1",
     "terser-webpack-plugin": "^2.3.5",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^4.6.0"
   },
   "babel": {
     "presets": [
